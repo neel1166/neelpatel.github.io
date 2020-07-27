@@ -1,0 +1,200 @@
+// ABOUT ME SECTION
+.composition {
+    // image container
+    // needed for position: absolute;
+    position: relative;
+
+    &__photo {
+        // always in % - to scale with viewport
+        width: 37%;
+        background-color: rgba($color-white, 0.95);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .7);
+        border-radius: 2px;
+        // stack img ontop of each other
+        // place according to reference -- first parent
+        position: absolute;
+
+        z-index: 10;
+        // animation effect
+        transition: all .2s;
+        
+        outline-offset: 2rem;
+
+        @include respond(tab-port){
+            float: left;
+            position: relative;
+            width: 33.33333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .1);
+        }
+
+        &--p1 { //py
+            left: 0;
+            // move upwards
+            top: -2rem;
+
+            @include respond(tab-port) {
+                top: 0;
+            }
+        }
+
+        &--p2 { // js
+            // 0px from the right side
+            right: 30%;
+            top: -2rem;
+
+            @include respond(tab-port) {
+
+                top: 0;
+                right:0;
+            }
+        }
+
+        &--p3 { // react
+            // %
+            right: 30%;
+            top: 11rem;
+
+            @include respond(tab-port) {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &--p4 { // html
+            right: 0;
+            top: -2rem;
+
+            @include respond(tab-port) {
+                top: 0;
+            }
+
+        }
+
+         &--p5 { //css
+             right: 0;
+             top: 11rem;
+
+             @include respond(tab-port) {
+                top: 0;
+            }
+         }
+
+         &--p6 { // sass
+             right: 0;
+             top: 23rem;
+
+             @include respond(tab-port) {
+                top: 0;
+            }
+         }
+
+
+         &--p7 { // bootstrap
+            right: 0;
+             top: 35rem;
+
+             @include respond(tab-port) {
+                top: 0;
+                left: 0;
+            }
+         }
+
+         &--p8 { // flask
+            left: 0;
+            top: 11.5rem;
+
+            @include respond(tab-port) {
+                top: 2r0rem;
+                left: 33%;
+            }
+
+         }
+
+         &--p9 { // jinja
+             left: 0;
+             top: 23rem;
+
+             @include respond(tab-port) {
+                top: 0;
+            }
+
+         }
+
+
+         &--p10 { // jquery
+             right: 30%;
+             top: 25rem;
+
+             @include respond(tab-port) {
+                top: -15rem;
+                right: 33%;
+            }
+
+         }
+         
+         &--p11 { ///postgres
+             left:0;
+             top: 37rem;
+
+             @include respond(tab-port) {
+                top: -15rem;
+            }
+
+         }
+
+         &--p12 {
+             left:0;
+             top: 50rem;
+
+             @include respond(tab-port) {
+                top: -5rem;
+
+            }
+
+         }
+
+         &--p13 {
+             right: 30%;
+             top: 37rem;
+
+             @include respond(tab-port) {
+                top: -5rem;
+                right: 66%;
+            }
+
+         }
+
+         &--p16 {
+             right: 30%;
+             top: 50rem;
+
+             @include respond(tab-port) {
+                top: -26rem;
+                right: 0;
+                left: 34%;
+            }
+
+         }
+
+
+        // image border
+        &:hover {
+            outline: 1.5rem solid $color-purple;
+            transform: scale(1.05) translateY(-.5rem);
+            // increase shadow when zoom in
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .7);
+            // overlap other img
+            z-index: 20;
+
+            @include respond(tab-port) {
+                outline: 1rem solid $color-purple;
+            }
+        }
+
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+    //composition:hover composition__photo:not(:hover) {
+}

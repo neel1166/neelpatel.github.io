@@ -1,0 +1,126 @@
+/* @keyframes name */
+@keyframes moveInLeft {
+    /* start of animation */
+    0% {
+        opacity: 0;
+        /* neg value from left, pos  val --> from the right */
+        transform: translateX(-10rem);
+    }
+    75% {
+        /* pos value --> goes to the right */
+        transform: translateX(1.5rem);
+    }
+    /* end of animation */
+    100% {
+        opacity: 1;
+        /* translate(0) --> what it looks like w/o any animation */
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    /* start of animation */
+    0% {
+        opacity: 0;
+        /* neg value from left, pos  val --> from the right */
+        transform: translateX(10rem);
+    }
+    75% {
+        /* pos value --> goes to the right */
+        transform: translateX(-1.5rem);
+    }
+    /* end of animation */
+    100% {
+        opacity: 1;
+        /* translate(0) --> what it looks like w/o any animation */
+        transform: translate(0);
+    }
+}
+
+@keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #333;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+
+// DOODLES
+@keyframes hello {
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes draw-square-white {
+  from {
+    stroke-dashoffset: -1314;
+    transform: rotate(0deg);
+  }
+  to {
+    stroke-dashoffset: 0;
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes draw-square-purple {
+  from {
+    stroke-dashoffset: -1282;
+    transform: rotate(0deg);
+  }
+  to {
+    stroke-dashoffset: 0;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity:1;
+    transform: scale(1.1);
+  }
+  17% {
+    opacity:1;
+    transform: scale(1.1);
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+    transform: scale(1.1);
+  }
+}

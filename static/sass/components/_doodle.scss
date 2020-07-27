@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.doodle {
+
+    &--1 {
+        text-align: center;
+        color: $color-primary;
+        font-family: 'Pacifico', cursive;
+        font-size: 90px;
+        font-weight: 500;
+        line-height: 90px;
+        letter-spacing: 15px;
+        text-shadow: 0 1px #efefef,
+            0 2px 0 #efefef,
+            0 3px 0 #efefef,
+            0 4px 0 #efefef,
+            2px 30px 5px rgba(0,0,0,.1);
+
+        animation: hello 3s linear infinite;
+        animation-direction: alternate;
+    }
+
+    &--2 {
+        .square-white {
+            // length of dash/outline
+           stroke-dasharray: 1314;
+           // move line
+           stroke-dashoffset: -1314; 
+
+           transform-origin: 50% 50%; // rotate from center
+           animation: draw-square-white 3s infinite;
+        }
+
+        .square-purple {
+            stroke-dasharray: 1282;
+            stroke-dashoffset: -1282;
+
+            transform-origin: 50% 50%; // rotate from center
+            animation: draw-square-purple 3s infinite;
+        }
+    }
+     &--3 {  
+        margin: 0 auto;
+        position: relative;
+    
+        .pepeNorm {
+            top: 0;
+            left: 0;
+            z-index:-1;
+            top:0;
+            left:0;
+            height:200px;
+            width:200px;
+        
+        }
+        .pepeWink {
+            position: absolute;
+            z-index: 100;
+            width:auto;
+        
+            height: 200px;
+            width: 200px;
+            animation: fade 2s infinite;
+
+            
+        }
+    }
+        
+
+}
