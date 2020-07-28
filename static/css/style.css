@@ -384,14 +384,14 @@ body {
       top: 11.5rem; }
       @media (max-width: 56.25em) {
         .composition__photo--p8 {
-          top: 2r0rem;
-          left: 33%; } }
+          top: 6rem;
+          left: 1%; } }
     .composition__photo--p9 {
       left: 0;
       top: 23rem; }
       @media (max-width: 56.25em) {
         .composition__photo--p9 {
-          top: 0; } }
+          top: -5rem; } }
     .composition__photo--p10 {
       right: 30%;
       top: 25rem; }
