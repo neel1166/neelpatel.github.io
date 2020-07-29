@@ -819,16 +819,17 @@ body {
   margin-right: auto;
   border-radius: 5px;
   background-color: rgb(214, 179, 235);
-  box-shadow: 0px 29px 57px 0px rgba(22, 20, 24, 0.06);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
   padding: 25px;
   width: 500px;
 }
 
 .form-box h4 {
   color: rgb(255, 255, 255);
-  text-align: centele;
-  font-weight: 200;
+  text-align: center;
+  font-weight: 100;
   font-size: 5rem;
+  letter-spacing: 2.5px;
   font-family: 'Pacifico', cursive;
   line-height: 7rem;
 }
@@ -843,7 +844,8 @@ body {
 .form-box p {
   color: rgb(46, 41, 41);
   font-family: 'Pacifico', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 .form-box hr {
   border: none;
@@ -933,7 +935,9 @@ body {
     display: inline-block;
     width: 100%; }
     .footer__details {
-        font: 2.5rem "Pacifico";
+        font: 3rem "Pacifico";
+        font-weight: 200;
+        letter-spacing: 3px;
         color: #fee;
         text-shadow:  
         0 0 2px, 
