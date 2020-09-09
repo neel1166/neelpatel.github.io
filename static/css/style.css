@@ -690,6 +690,31 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn--resume{
+  background-image: linear-gradient(to left top, #280e51, #392c6a);
+  color: white;
+  font-size: 17px;
+  font-family: "Larsseit", cursive;
+  font-weight: 550;
+  padding: 8px 150px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  letter-spacing: 4.5px;
+}
+  .btn--resume::after {
+    background-image: linear-gradient(to left top, #280e51, #392c6a); }
+
+    @media (max-width: 56.25em) {
+      .btn--resume{
+        font-size: 12px;
+        font-weight: 550;
+        padding: 5px 100px;
+        
+      }
+    }
+
 .doodle--1 {
   display: block;
   margin-left: auto;
